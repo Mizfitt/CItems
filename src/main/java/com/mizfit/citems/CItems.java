@@ -38,9 +38,6 @@ public class CItems extends JavaPlugin {
 
         // Initialize and register custom items
         CustomHoe customHoe = new CustomHoe(1, getName());
-        // Initialize and register other custom items
-
-        // Register commands and other initialization here
 
         if (!setupEconomy()) {
             getLogger().warning("No Economy plugin found. Disabling Vault");
@@ -53,6 +50,8 @@ public class CItems extends JavaPlugin {
         return instance;
     }
 
+    .\\ add Vault 
+    
     private boolean setupEconomy() {
         if (getServer().getPluginManager().getPlugin("Vault") == null) {
             return false;
@@ -70,7 +69,10 @@ public class CItems extends JavaPlugin {
     public static Economy getEconomy() {
         return econ;
     }
+        // Initialize and register other custom items
 
+        // Register commands and other initialization here
+    
     public class SpawnVillagerCommand implements CommandExecutor {
 
         @Override
