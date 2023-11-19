@@ -1,0 +1,4 @@
+name: CItems
+version: '${project.version}'
+main: com.mizfit.citems.CItems
+api-version: '1.20'

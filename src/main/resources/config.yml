@@ -1,0 +1,8 @@
+# config.yml
+levels:
+  hoe:
+    1: 500  # Amount of items needed for level 1
+    2: 1000 # Amount of items needed for level 2
+    3: 1500 # Amount of items needed for level 3
+    4: 2000 # Amount of items needed for level 4
+    5: 2500 # Amount of items needed for level 5
