@@ -9,6 +9,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 
 public class CustomHoe extends ItemStack {
+    // Discourage use of static
 
     private static final NamespacedKey LEVEL_KEY = new NamespacedKey(CItems.getInstance(), "level");
     private static final NamespacedKey OWNER_KEY = new NamespacedKey(CItems.getInstance(), "owner");
@@ -25,6 +26,7 @@ public class CustomHoe extends ItemStack {
     }
     private void updateDisplayName() {
         ItemMeta meta = getItemMeta();
+        // change this to use the Component stuff like we saw in the other event handler for the villagers
         meta.setDisplayName("Level " + getLevel() + " Dynamic Hoe");
         setItemMeta(meta);
     }

@@ -13,6 +13,11 @@ public class HoeEventListener implements Listener {
 
     @EventHandler
     public void onHoeUse(PlayerInteractEvent event) {
+
+        // One of the main problems with this is, a player could potentially just interact with random crops and/or blocks
+        // and it would drop wheat. This is because the event is called whenever a player interacts with anything and isn't
+        // restricted to a certain crop type.
+
         Player player = event.getPlayer();
         ItemStack item = player.getInventory().getItemInMainHand();
 
